@@ -86,7 +86,7 @@ namespace WebshopHPWcore.Controllers
             // Retrieve the current user's shopping cart
             var cart = UserLogin();
 
-            // Get the name of the album to display confirmation
+            // Get the name of the cart to display confirmation
             var cartItem = await DbContext.CartItems
                 .Where(item => item.CartItemId == id)
                 .Include(c => c.Car)
