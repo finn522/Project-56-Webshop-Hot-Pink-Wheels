@@ -57,7 +57,7 @@ namespace WebshopHPWcore.Controllers
         // GET: /ShoppingCart/AddToCart/5
         public async Task<IActionResult> AddToCart(int id, CancellationToken requestAborted)
         {
-            // Retrieve the album from the database
+            // Retrieve the cart from the database
             ShoppingCart cart;
             string userid = CheckId();
 
